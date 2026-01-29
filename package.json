@@ -3,7 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "db:ping": "node scripts/db/dbPing.mjs"
+    "db:ping": "node scripts/db/dbPing.mjs",
+    "db:info": "node scripts/db/dbInfo.mjs",
+    "env:check": "node scripts/diagnostics/envCheck.mjs",
+    "files:large": "node scripts/files/findLargeFiles.mjs ."
   },
   "dependencies": {
     "dotenv": "^16.4.5",
