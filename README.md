@@ -1,5 +1,10 @@
 # legendary-utils
 
+![Node](https://img.shields.io/badge/node-%3E%3D18-brightgreen)
+![Stars](https://img.shields.io/github/stars/troywoldridge/legendary-utils?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/troywoldridge/legendary-utils)
+![License](https://img.shields.io/github/license/troywoldridge/legendary-utils)
+
 A curated set of reusable utility scripts used to operate and maintain the **Legendary Collectibles** platform.
 
 This repo is designed to be **public-safe** (no secrets committed) while still showcasing real-world tooling:
