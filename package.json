@@ -1,0 +1,12 @@
+{
+  "name": "legendary-utils",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "db:ping": "node scripts/db/dbPing.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.12.0"
+  }
+}
