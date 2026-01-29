@@ -3,10 +3,19 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "help": "node -e \"console.log(['legendary-utils scripts:','  npm run env:check','  npm run safety:scan','  npm run db:ping','  npm run db:info','  npm run db:schema','  npm run files:large','  npm run feed:validate -- <feed.tsv>','  npm run feed:sample -- <feed.tsv> [rows]'].join('\\n'))\"",
+
+    "env:check": "node scripts/diagnostics/envCheck.mjs",
+    "safety:scan": "node scripts/diagnostics/gitSafetyScan.mjs .",
+
     "db:ping": "node scripts/db/dbPing.mjs",
     "db:info": "node scripts/db/dbInfo.mjs",
-    "env:check": "node scripts/diagnostics/envCheck.mjs",
-    "files:large": "node scripts/files/findLargeFiles.mjs ."
+    "db:schema": "node scripts/db/dbSchemaSnapshot.mjs",
+
+    "files:large": "node scripts/files/findLargeFiles.mjs .",
+
+    "feed:validate": "node scripts/feeds/merchantFeedValidate.mjs",
+    "feed:sample": "node scripts/feeds/merchantFeedSample.mjs"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
